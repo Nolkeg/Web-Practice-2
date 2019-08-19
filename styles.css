@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: hsl(218, 28%, 13%);
+    color: hsl(0, 0%, 100%);
+    margin: 0px;
+    width: 100%;
+    min-width: 375px;
+}
+
+h1,h2,h3,h4,h5,h6, .Call-to-actions, Header .Navigation{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+div{
+    /* border: solid 1px #eee; */
+}
+
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+button{
+    color: white;
+    background-image: linear-gradient(to right,hsl(176, 68%, 64%) ,hsl(198, 60%, 50%)); 
+    padding: 15px 50px;
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+input{
+    padding: 15px 20px;
+    border-style: none;
+    border-radius: 30px;
+}   
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 5%;
+}
+
+.Navigation{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Navigation div{
+    margin: 0px 20px;
+}
+
+.Section-padding{
+    padding: 50px 5%;
+}
+
+.Banner{
+    text-align: center;
+    background-color: hsl(217, 28%, 15%);
+    background-image: url("images/bg-curvy-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.Banner img{
+    width: 40%;
+    min-width: 350px;
+}
+
+.Banner-text{
+    width: 50%;
+    margin: 0px auto;
+}
+
+.Content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 600px);
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.Content div{
+    padding: 10px;
+    margin: 16px;
+}
+
+.Productive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Productive img{
+    width: 30%;
+    min-width: 350px;
+}
+
+.Productive div{
+    margin: 32px;
+}
+
+.Productive a{
+    font-size: 16px;
+    text-decoration: underline;
+    color: hsl(176, 68%, 64%);
+}
+
+.Testimonial{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+#quote{
+    position: absolute;
+    z-index: -5;
+    top: -30px;
+    left: -30px;
+    
+}
+
+
+.Card{
+    position: relative;
+    margin: 16px 16px;
+    width: 30%;
+    min-width: 350px;
+    padding: 16px;
+    background-color:  hsl(219, 30%, 18%);
+    border-radius: 5px;
+}
+
+.Testimonial img{
+    border-radius: 100%;
+    height: 50px;
+    float: left;
+}
+
+.Card-user{
+    margin: 0px;
+    padding: 8px;
+}
+
+.Card-user p{
+    display: inline-block;
+    margin: 0px 0px 8px 8px;
+}
+
+.Call-to-actions{
+    box-shadow: 10px 10px 10px black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(hsl(218, 28%, 13%) 50%, hsl(216, 53%, 9%) 50%);
+}
+
+.Call-to-actions h1{
+    margin: 0px;
+}
+
+.Call-to-actions div{
+    align-self: center;
+    justify-self: center;
+    padding: 5%;
+    width: 60%;
+    min-width: 350px;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 10px;
+}
+
+.Call-to-actions form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Call-to-actions button{
+    margin: 16px;
+    flex-grow: 2;
+}
+
+.Call-to-actions input{
+    flex-grow: 8;
+    margin: 16px;
+}
+
+
+footer{
+    background-color: hsl(216, 53%, 9%);
+   
+}
+
+footer .Credit{
+    display: grid;
+    /* grid-template-columns: auto auto auto auto auto; */
+    grid-template-columns: repeat(auto-fit, 200px);
+    justify-content: space-evenly;
+}
+#location-icon{
+    vertical-align: top;
+    padding-top: 18px;
+}
+
+.Credit div{
+    padding: 0px 8px;
+}
+
+
+
+.Credit li{
+    list-style: none;
+}
+
+.Credit td{
+    padding: 0px 8px;
+}
+
+
+.Credit .Social-icons{
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 650px){
+    .Navigation div{
+        margin: 0px 5px;
+        font-size: 12px;
+    }
+    footer .Credit{
+        justify-content: left;
+    }
+    .Credit ul{
+        padding: 0px;
+    }
+
+    .Content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 375px);
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .Social{
+        justify-self: center;
+    }
+    
+}
+
+@media (max-width : 375px){
+    .Credit .Social-icons{
+        text-align: center;
+    }
+}
+
+@media (max-width: 1314px){
+    .Productive{
+        text-align: center;
+    }
+}
